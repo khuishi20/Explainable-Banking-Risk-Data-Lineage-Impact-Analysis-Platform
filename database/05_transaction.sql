@@ -1,0 +1,2 @@
+CREATE TABLE bank_transaction (transaction_id NUMBER PRIMARY KEY, account_id NUMBER, transaction_date DATE, transaction_type VARCHAR2(20), amount NUMBER(18,2), currency_code VARCHAR2(10), channel VARCHAR2(30), CONSTRAINT fk_txn_account FOREIGN KEY(account_id) REFERENCES account(account_id));
+CREATE TABLE liquidity_report (report_date DATE, inflow_amount NUMBER(18,2), outflow_amount NUMBER(18,2), liquidity_gap NUMBER(18,2), status VARCHAR2(20));

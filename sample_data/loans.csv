@@ -1,0 +1,2 @@
+loan_id,customer_id,loan_type,principal_amount,outstanding_amount,interest_rate,disbursement_date,maturity_date,loan_status
+4001,1001,HOME,5000000,4200000,8.4,2024-02-01,2044-02-01,ACTIVE

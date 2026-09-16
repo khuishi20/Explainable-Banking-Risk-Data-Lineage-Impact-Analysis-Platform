@@ -1,0 +1,1 @@
+CREATE TABLE customer (customer_id NUMBER PRIMARY KEY, customer_name VARCHAR2(100), customer_type VARCHAR2(20), date_of_birth DATE, city VARCHAR2(50), customer_status VARCHAR2(20), created_date DATE DEFAULT SYSDATE);

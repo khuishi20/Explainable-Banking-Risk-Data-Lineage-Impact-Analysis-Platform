@@ -1,0 +1,1 @@
+CREATE TABLE deposit (deposit_id NUMBER PRIMARY KEY, customer_id NUMBER, deposit_type VARCHAR2(30), deposit_amount NUMBER(18,2), interest_rate NUMBER(8,4), start_date DATE, maturity_date DATE, deposit_status VARCHAR2(20), CONSTRAINT fk_deposit_customer FOREIGN KEY(customer_id) REFERENCES customer(customer_id));

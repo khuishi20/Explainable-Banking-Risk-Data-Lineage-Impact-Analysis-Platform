@@ -1,0 +1,4 @@
+customer_id,customer_name,customer_type,date_of_birth,city,customer_status
+1001,Rahul Sharma,INDIVIDUAL,1998-05-10,Pune,ACTIVE
+1002,Priya Mehta,INDIVIDUAL,1995-08-15,Mumbai,ACTIVE
+1003,ABC Technologies,CORPORATE,,Pune,ACTIVE

@@ -1,0 +1,4 @@
+account_id,customer_id,account_type,current_balance,interest_rate,open_date,maturity_date,account_status
+2001,1001,SAVINGS,250000,3.5,2024-01-10,,ACTIVE
+2002,1002,CURRENT,500000,2.5,2023-06-15,,ACTIVE
+2003,1003,CURRENT,2500000,2.8,2022-03-20,,ACTIVE

@@ -1,0 +1,1 @@
+CREATE TABLE loan (loan_id NUMBER PRIMARY KEY, customer_id NUMBER, loan_type VARCHAR2(30), principal_amount NUMBER(18,2), outstanding_amount NUMBER(18,2), interest_rate NUMBER(8,4), disbursement_date DATE, maturity_date DATE, loan_status VARCHAR2(20), CONSTRAINT fk_loan_customer FOREIGN KEY(customer_id) REFERENCES customer(customer_id));

@@ -1,0 +1,2 @@
+CREATE TABLE report_metric (metric_id NUMBER PRIMARY KEY, report_name VARCHAR2(100), metric_name VARCHAR2(100), calculation_logic VARCHAR2(1000), target_object VARCHAR2(100), target_column VARCHAR2(100), business_description VARCHAR2(500));
+INSERT INTO report_metric VALUES(1,'ALM_LIQUIDITY_REPORT','30_DAY_LIQUIDITY_GAP','TOTAL INFLOWS - TOTAL OUTFLOWS','LIQUIDITY_REPORT','LIQUIDITY_GAP','Measures expected liquidity surplus or deficit'); COMMIT;

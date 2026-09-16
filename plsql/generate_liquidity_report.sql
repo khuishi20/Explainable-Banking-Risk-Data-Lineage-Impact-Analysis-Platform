@@ -1,0 +1,2 @@
+CREATE OR REPLACE PROCEDURE generate_liquidity_report IS v_inflow NUMBER; v_outflow NUMBER; v_gap NUMBER; BEGIN SELECT NVL(SUM(amount),0) INTO v_inflow FROM bank_transaction WHERE transaction_type='INFLOW'; SELECT NVL(SUM(amount),0) INTO v_outflow FROM bank_transaction WHERE transaction_type='OUTFLOW'; v_gap:=v_inflow-v_outflow; INSERT INTO liquidity_report VALUES(SYSDATE,v_inflow,v_outflow,v_gap,CASE WHEN v_gap>=0 THEN 'SURPLUS' ELSE 'DEFICIT' END); COMMIT; EXCEPTION WHEN OTHERS THEN ROLLBACK; RAISE; END;
+/

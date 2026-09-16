@@ -1,0 +1,4 @@
+transaction_id,account_id,transaction_date,transaction_type,amount,currency_code,channel
+3001,2001,2026-09-15,INFLOW,200000,INR,NEFT
+3002,2002,2026-09-15,OUTFLOW,75000,INR,UPI
+3003,2003,2026-09-16,INFLOW,125000,INR,RTGS
